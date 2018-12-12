@@ -35,6 +35,11 @@ export declare class Paragraph extends XmlComponent {
     justified(): Paragraph;
     thematicBreak(): Paragraph;
     pageBreak(): Paragraph;
+    columnBreak(): Paragraph;
+    lineBreak(): Paragraph;
+    lineBreakLeft(): Paragraph;
+    lineBreakRight(): Paragraph;
+    lineBreakBoth(): Paragraph;
     pageBreakBefore(): Paragraph;
     maxRightTabStop(leader?: LeaderType): Paragraph;
     leftTabStop(position: number, leader?: LeaderType): Paragraph;

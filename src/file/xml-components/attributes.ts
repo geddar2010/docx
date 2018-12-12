@@ -6,6 +6,8 @@ export interface IAttributesProperties {
     readonly space?: string;
     readonly sz?: string;
     readonly type?: string;
+
+    readonly clear?: string;
     readonly rsidR?: string;
     readonly rsidRPr?: string;
     readonly rsidSect?: string;
@@ -29,6 +31,7 @@ export class Attributes extends XmlAttributeComponent<IAttributesProperties> {
         space: "w:space",
         sz: "w:sz",
         type: "w:type",
+        clear: "w:clear",
         rsidR: "w:rsidR",
         rsidRPr: "w:rsidRPr",
         rsidSect: "w:rsidSect",

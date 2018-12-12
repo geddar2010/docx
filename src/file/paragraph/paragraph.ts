@@ -9,7 +9,7 @@ import { Bidirectional } from "./formatting/bidirectional";
 import { Border, ThematicBreak } from "./formatting/border";
 import { IIndentAttributesProperties, Indent } from "./formatting/indent";
 import { KeepLines, KeepNext } from "./formatting/keep";
-import { PageBreak, PageBreakBefore } from "./formatting/page-break";
+import { ColumnBreak, LineBreak, LineBreakBoth, LineBreakLeft, LineBreakRight, PageBreak, PageBreakBefore } from "./formatting/page-break";
 import { ContextualSpacing, ISpacingProperties, Spacing } from "./formatting/spacing";
 import { Style } from "./formatting/style";
 import { CenterTabStop, LeaderType, LeftTabStop, MaxRightTabStop, RightTabStop } from "./formatting/tab-stop";
@@ -151,6 +151,27 @@ export class Paragraph extends XmlComponent {
 
     public pageBreak(): Paragraph {
         this.root.push(new PageBreak());
+        return this;
+    }
+
+    public columnBreak(): Paragraph {
+        this.root.push(new ColumnBreak());
+        return this;
+    }
+    public lineBreak(): Paragraph {
+        this.root.push(new LineBreak());
+        return this;
+    }
+    public lineBreakLeft(): Paragraph {
+        this.root.push(new LineBreakLeft());
+        return this;
+    }
+    public lineBreakRight(): Paragraph {
+        this.root.push(new LineBreakRight());
+        return this;
+    }
+    public lineBreakBoth(): Paragraph {
+        this.root.push(new LineBreakBoth());
         return this;
     }
 
