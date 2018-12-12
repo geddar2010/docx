@@ -1,4 +1,4 @@
-import { XmlComponent } from "file/xml-components";
+import { XmlComponent } from "../../file/xml-components";
 import { LevelForOverride } from "./level";
 export declare class Num extends XmlComponent {
     readonly id: number;

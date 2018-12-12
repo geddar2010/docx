@@ -1,4 +1,4 @@
-import { XmlAttributeComponent } from "file/xml-components";
+import { XmlAttributeComponent } from "../../../../../../../../../file/xml-components";
 export interface IPicLocksAttributes {
     readonly noChangeAspect?: number;
     readonly noChangeArrowheads?: number;

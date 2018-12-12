@@ -1,4 +1,4 @@
-import { XmlComponent } from "file/xml-components";
+import { XmlComponent } from "../../../file/xml-components";
 export { Underline } from "./underline";
 export { SubScript, SuperScript } from "./script";
 export { RunFonts } from "./run-fonts";

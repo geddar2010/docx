@@ -1,4 +1,4 @@
-import { XmlAttributeComponent } from "file/xml-components";
+import { XmlAttributeComponent } from "../../../file/xml-components";
 export interface IDocPropertiesAttributes {
     readonly id?: number;
     readonly name?: string;

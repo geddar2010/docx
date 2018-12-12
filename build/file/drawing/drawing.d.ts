@@ -1,5 +1,5 @@
-import { IMediaData } from "file/media";
-import { XmlComponent } from "file/xml-components";
+import { IMediaData } from "../../file/media";
+import { XmlComponent } from "../../file/xml-components";
 import { IFloating } from "./floating";
 import { ITextWrapping } from "./text-wrap";
 export declare enum PlacementPosition {

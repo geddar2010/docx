@@ -1,4 +1,4 @@
-import { XmlComponent } from "file/xml-components";
+import { XmlComponent } from "../../../file/xml-components";
 import { ITableCellShadingAttributesProperties, TableCellBorders, VerticalAlign, VMergeType, WidthType } from "./table-cell-components";
 export declare class TableCellProperties extends XmlComponent {
     private readonly cellBorder;

@@ -1,4 +1,4 @@
-import { XmlComponent } from "file/xml-components";
+import { XmlComponent } from "../../file/xml-components";
 export declare class Title extends XmlComponent {
     constructor(value: string);
 }

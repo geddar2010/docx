@@ -1,4 +1,4 @@
-import { XmlComponent } from "file/xml-components";
+import { XmlComponent } from "../../../../../file/xml-components";
 import { FooterReferenceType } from "./footer-reference-attributes";
 export interface IFooterOptions {
     readonly footerType?: FooterReferenceType;

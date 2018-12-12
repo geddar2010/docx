@@ -1,4 +1,4 @@
-import { XmlComponent } from "file/xml-components";
+import { XmlComponent } from "../../file/xml-components";
 import { Paragraph } from "../paragraph";
 import { Table } from "../table";
 import { TableOfContents } from "../table-of-contents";

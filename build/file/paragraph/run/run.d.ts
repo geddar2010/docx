@@ -1,5 +1,5 @@
 import { RunProperties } from "./properties";
-import { XmlComponent } from "file/xml-components";
+import { XmlComponent } from "../../../file/xml-components";
 export declare class Run extends XmlComponent {
     protected readonly properties: RunProperties;
     constructor();

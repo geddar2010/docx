@@ -1,4 +1,4 @@
-import { XmlComponent } from "file/xml-components";
+import { XmlComponent } from "../../file/xml-components";
 import { ISpacingProperties } from "../paragraph/formatting";
 export declare enum LevelSuffix {
     NOTHING = "nothing",

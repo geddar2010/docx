@@ -1,5 +1,5 @@
 /// <reference types="node" />
-import { XmlComponent } from "file/xml-components";
+import { XmlComponent } from "../file/xml-components";
 import { HeaderReferenceType } from "./document";
 import { Header } from "./header/header";
 import { Image, IMediaData, Media } from "./media";

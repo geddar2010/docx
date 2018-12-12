@@ -1,4 +1,4 @@
-import { XmlComponent } from "file/xml-components";
+import { XmlComponent } from "../../file/xml-components";
 import { Level } from "./level";
 export declare class AbstractNumbering extends XmlComponent {
     readonly id: number;

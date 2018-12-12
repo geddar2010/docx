@@ -1,4 +1,4 @@
-import { XmlComponent } from "file/xml-components";
+import { XmlComponent } from "../../../file/xml-components";
 export declare abstract class BaseUnderline extends XmlComponent {
     constructor(underlineType: string, color?: string);
 }

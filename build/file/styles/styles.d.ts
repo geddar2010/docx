@@ -1,4 +1,4 @@
-import { BaseXmlComponent, XmlComponent } from "file/xml-components";
+import { BaseXmlComponent, XmlComponent } from "../../file/xml-components";
 import { DocumentDefaults } from "./defaults";
 import { CharacterStyle, ParagraphStyle } from "./style";
 export * from "./border";

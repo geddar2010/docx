@@ -1,4 +1,4 @@
-import { XmlAttributeComponent } from "file/xml-components";
+import { XmlAttributeComponent } from "../../../../../file/xml-components";
 export declare enum FooterReferenceType {
     DEFAULT = "default",
     FIRST = "first",

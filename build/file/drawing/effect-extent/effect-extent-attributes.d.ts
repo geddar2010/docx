@@ -1,4 +1,4 @@
-import { XmlAttributeComponent } from "file/xml-components";
+import { XmlAttributeComponent } from "../../../file/xml-components";
 export interface IEffectExtentAttributes {
     readonly b?: number;
     readonly l?: number;

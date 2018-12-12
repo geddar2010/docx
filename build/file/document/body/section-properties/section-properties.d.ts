@@ -1,6 +1,6 @@
-import { FooterWrapper } from "file/footer-wrapper";
-import { HeaderWrapper } from "file/header-wrapper";
-import { XmlComponent } from "file/xml-components";
+import { FooterWrapper } from "../../../../file/footer-wrapper";
+import { HeaderWrapper } from "../../../../file/header-wrapper";
+import { XmlComponent } from "../../../../file/xml-components";
 import { IColumnsAttributes } from "./columns/columns-attributes";
 import { IDocGridAttributesProperties } from "./doc-grid/doc-grid-attributes";
 import { IPageBordersOptions } from "./page-border";
