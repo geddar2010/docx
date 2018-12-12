@@ -25,15 +25,15 @@ export interface IHeaderFooterGroup<T> {
     readonly even?: T;
 }
 
-interface IHeadersOptions {
+export interface IHeadersOptions {
     readonly headers?: IHeaderFooterGroup<HeaderWrapper>;
 }
 
-interface IFootersOptions {
+export interface IFootersOptions {
     readonly footers?: IHeaderFooterGroup<FooterWrapper>;
 }
 
-interface ITitlePageOptions {
+export interface ITitlePageOptions {
     readonly titlePage?: boolean;
 }
 
