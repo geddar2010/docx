@@ -1,6 +1,6 @@
-import { Image } from "../../file/media";
-import { Num } from "../../file/numbering/num";
-import { XmlComponent } from "../../file/xml-components";
+import { Image } from "file/media";
+import { Num } from "file/numbering/num";
+import { XmlComponent } from "file/xml-components";
 import { Border } from "./formatting/border";
 import { IIndentAttributesProperties } from "./formatting/indent";
 import { ISpacingProperties } from "./formatting/spacing";

@@ -12,18 +12,11 @@
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "baseUrl": "./src",
-        "paths" : {
-          "/*": [
-              "./*"
-            ]
+        "paths": {
+            "/*": ["./*"]
         }
     },
-    "exclude": [
-        "node_modules",
-        "tests",
-        "**/_*",
-        "demo"
-    ],
+    "exclude": ["node_modules", "tests", "**/_*", "**/*.spec.ts", "demo"],
     "typedocOptions": {
         "mode": "file",
         "out": "docs/api",
@@ -41,5 +34,5 @@
         "suppressExcessPropertyErrors": true,
         "suppressImplicitAnyIndexErrors": true,
         "module": "commonjs"
-      }
+    }
 }

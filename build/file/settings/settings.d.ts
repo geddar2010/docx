@@ -1,4 +1,4 @@
-import { XmlAttributeComponent, XmlComponent } from "../../file/xml-components";
+import { XmlAttributeComponent, XmlComponent } from "file/xml-components";
 export interface ISettingsAttributesProperties {
     readonly wpc?: string;
     readonly mc?: string;

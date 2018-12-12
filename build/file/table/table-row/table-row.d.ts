@@ -1,4 +1,4 @@
-import { XmlComponent } from "../../../file/xml-components";
+import { XmlComponent } from "file/xml-components";
 import { TableCell } from "../table-cell";
 export declare class TableRow extends XmlComponent {
     private readonly cells;

@@ -1,10 +1,10 @@
 /// <reference types="node" />
 import * as JSZip from "jszip";
-import { FooterReferenceType } from "../file/document/body/section-properties/footer-reference";
-import { HeaderReferenceType } from "../file/document/body/section-properties/header-reference";
-import { FooterWrapper, IDocumentFooter } from "../file/footer-wrapper";
-import { HeaderWrapper, IDocumentHeader } from "../file/header-wrapper";
-import { Styles } from "../file/styles";
+import { FooterReferenceType } from "file/document/body/section-properties/footer-reference";
+import { HeaderReferenceType } from "file/document/body/section-properties/header-reference";
+import { FooterWrapper, IDocumentFooter } from "file/footer-wrapper";
+import { HeaderWrapper, IDocumentHeader } from "file/header-wrapper";
+import { Styles } from "file/styles";
 interface IDocumentRefs {
     readonly headers: Array<{
         readonly id: number;

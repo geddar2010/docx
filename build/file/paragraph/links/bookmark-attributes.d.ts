@@ -1,4 +1,4 @@
-import { XmlAttributeComponent } from "../../../file/xml-components";
+import { XmlAttributeComponent } from "file/xml-components";
 export interface IBookmarkStartAttributesProperties {
     readonly id: string;
     readonly name: string;

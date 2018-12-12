@@ -1,4 +1,4 @@
-import { XmlAttributeComponent } from "../../file/xml-components";
+import { XmlAttributeComponent } from "file/xml-components";
 export interface IFootnotesAttributesProperties {
     readonly wpc?: string;
     readonly mc?: string;

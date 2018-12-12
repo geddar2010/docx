@@ -1,4 +1,4 @@
-import { XmlAttributeComponent, XmlComponent } from "../../../file/xml-components";
+import { XmlAttributeComponent, XmlComponent } from "file/xml-components";
 export declare enum TableAnchorType {
     MARGIN = "margin",
     PAGE = "page",

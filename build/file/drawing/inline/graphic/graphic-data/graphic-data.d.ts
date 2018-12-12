@@ -1,4 +1,4 @@
-import { XmlComponent } from "../../../../../file/xml-components";
+import { XmlComponent } from "file/xml-components";
 export declare class GraphicData extends XmlComponent {
     private readonly pic;
     constructor(referenceId: number, x: number, y: number);

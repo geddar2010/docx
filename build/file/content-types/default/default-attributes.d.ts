@@ -1,4 +1,4 @@
-import { XmlAttributeComponent } from "../../../file/xml-components";
+import { XmlAttributeComponent } from "file/xml-components";
 export interface IDefaultAttributes {
     readonly contentType: string;
     readonly extension?: string;

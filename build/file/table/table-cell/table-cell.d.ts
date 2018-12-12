@@ -1,5 +1,5 @@
-import { Paragraph } from "../../../file/paragraph";
-import { IXmlableObject, XmlComponent } from "../../../file/xml-components";
+import { Paragraph } from "file/paragraph";
+import { IXmlableObject, XmlComponent } from "file/xml-components";
 import { Table } from "../table";
 import { TableCellProperties } from "./table-cell-properties";
 export declare class TableCell extends XmlComponent {

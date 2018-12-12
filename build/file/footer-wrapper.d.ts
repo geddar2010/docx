@@ -1,5 +1,5 @@
 /// <reference types="node" />
-import { XmlComponent } from "../file/xml-components";
+import { XmlComponent } from "file/xml-components";
 import { FooterReferenceType } from "./document";
 import { Footer } from "./footer/footer";
 import { Image, IMediaData, Media } from "./media";

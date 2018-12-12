@@ -1,4 +1,4 @@
-import { IXmlableObject, XmlComponent } from "../../../file/xml-components";
+import { IXmlableObject, XmlComponent } from "file/xml-components";
 import { WidthType } from "../table-cell";
 export declare class TableCellMargin extends XmlComponent {
     constructor();

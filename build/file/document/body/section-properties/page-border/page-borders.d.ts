@@ -1,5 +1,5 @@
-import { BorderStyle } from "../../../../../file/styles";
-import { IXmlableObject, XmlComponent } from "../../../../../file/xml-components";
+import { BorderStyle } from "file/styles";
+import { IXmlableObject, XmlComponent } from "file/xml-components";
 export declare enum PageBorderDisplay {
     ALL_PAGES = "allPages",
     FIRST_PAGE = "firstPage",

@@ -1,4 +1,4 @@
-import { XmlComponent } from "../../file/xml-components";
+import { XmlComponent } from "file/xml-components";
 import { Border } from "./formatting/border";
 export declare class ParagraphProperties extends XmlComponent {
     readonly paragraphBorder: Border;

@@ -1,5 +1,5 @@
-import { ISpacingProperties } from "../../../file/paragraph";
-import { XmlComponent } from "../../../file/xml-components";
+import { ISpacingProperties } from "file/paragraph";
+import { XmlComponent } from "file/xml-components";
 import { Style } from "./style";
 export declare class ParagraphStyle extends Style {
     private readonly paragraphProperties;

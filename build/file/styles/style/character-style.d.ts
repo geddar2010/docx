@@ -1,4 +1,4 @@
-import { XmlComponent } from "../../../file/xml-components";
+import { XmlComponent } from "file/xml-components";
 import { Style } from "./style";
 export declare class CharacterStyle extends Style {
     private readonly runProperties;

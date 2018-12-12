@@ -4,9 +4,9 @@ module.exports = {
     entry: "./src/index.ts",
 
     output: {
-        path: path.resolve("build"),
         filename: "index.js",
         libraryTarget: "umd",
+        path: path.resolve("build"),
     },
 
     resolve: {
@@ -17,17 +17,17 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.ts$/,
                 loaders: ["awesome-typescript-loader"],
+                test: /\.ts$/,
             },
             {
                 // For coverage testing
-                test: /\.(ts)/,
-                include: path.resolve("src"),
-                loader: "istanbul-instrumenter-loader",
                 enforce: "post",
                 exclude: [/node_modules/],
-            }
+                include: path.resolve("src"),
+                loader: "istanbul-instrumenter-loader",
+                test: /\.(ts)/,
+            },
         ],
     },
 

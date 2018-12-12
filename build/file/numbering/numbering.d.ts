@@ -1,4 +1,4 @@
-import { IXmlableObject, XmlComponent } from "../../file/xml-components";
+import { IXmlableObject, XmlComponent } from "file/xml-components";
 import { AbstractNumbering } from "./abstract-numbering";
 import { Num } from "./num";
 export declare class Numbering extends XmlComponent {

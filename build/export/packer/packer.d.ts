@@ -1,5 +1,5 @@
 /// <reference types="node" />
-import { File } from "../../file";
+import { File } from "file";
 export declare class Packer {
     private readonly compiler;
     constructor();

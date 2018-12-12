@@ -1,4 +1,4 @@
-import { XmlComponent } from "../../file/xml-components";
+import { XmlComponent } from "file/xml-components";
 export interface IPropertiesOptions {
     readonly title?: string;
     readonly subject?: string;

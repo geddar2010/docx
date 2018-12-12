@@ -1,4 +1,4 @@
-import { XmlComponent } from "../../../file/xml-components";
+import { XmlComponent } from "file/xml-components";
 import { WidthType } from "../table-cell";
 import { TableCellMargin } from "./table-cell-margin";
 import { ITableFloatOptions } from "./table-float-properties";

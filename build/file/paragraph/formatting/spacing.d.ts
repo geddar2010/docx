@@ -1,4 +1,4 @@
-import { XmlComponent } from "../../../file/xml-components";
+import { XmlComponent } from "file/xml-components";
 export interface ISpacingProperties {
     readonly after?: number;
     readonly before?: number;
