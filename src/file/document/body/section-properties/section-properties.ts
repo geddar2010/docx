@@ -3,6 +3,7 @@ import { FooterWrapper } from "file/footer-wrapper";
 import { HeaderWrapper } from "file/header-wrapper";
 import { XmlComponent } from "file/xml-components";
 
+import { ISectionTypeAttributes, SectionType, SectionTypeValue } from ".";
 import { Columns } from "./columns/columns";
 import { IColumnsAttributes } from "./columns/columns-attributes";
 import { DocumentGrid } from "./doc-grid/doc-grid";
@@ -38,15 +39,16 @@ export interface ITitlePageOptions {
 }
 
 export interface ISectionPropertiesOptions
-    extends IPageSizeAttributes,
-        IPageMarginAttributes,
+    extends ISectionTypeAttributes,
         IColumnsAttributes,
         IDocGridAttributesProperties,
-        IHeadersOptions,
         IFootersOptions,
-        IPageNumberTypeAttributes,
+        IHeadersOptions,
         IPageBordersOptions,
-        ITitlePageOptions {}
+        IPageMarginAttributes,
+        IPageNumberTypeAttributes,
+        ITitlePageOptions,
+        IPageSizeAttributes {}
 
 export type SectionPropertiesOptions = ISectionPropertiesOptions;
 
@@ -57,35 +59,37 @@ export class SectionProperties extends XmlComponent {
         super("w:sectPr");
 
         const {
-            width = 11906,
-            height = 16838,
-            top = 1133,
-            right = 1133,
             bottom = 1133,
-            left = 1440,
-            header = 1700,
-            footer = 708,
-            gutter = 0,
-            mirror = false,
-            space = 284,
-            num = 1,
             equalWidth = true,
-            sep = false,
-            linePitch = 360,
-            orientation = PageOrientation.PORTRAIT,
-            headers,
+            footer = 708,
             footers,
-            pageNumberFormatType,
-            pageNumberStart,
-            pageBorders,
-            pageBorderTop,
-            pageBorderRight,
+            gutter = 0,
+            header = 1700,
+            headers,
+            height = 16839,
+            left = 1440,
+            linePitch = 360,
+            mirror = false,
+            num = 1,
+            orientation = PageOrientation.PORTRAIT,
             pageBorderBottom,
             pageBorderLeft,
+            pageBorderRight,
+            pageBorders,
+            pageBorderTop,
+            pageNumberFormatType,
+            pageNumberStart,
+            right = 1133,
+            sep = false,
+            space = 284,
             titlePage = false,
+            top = 1133,
+            type = SectionTypeValue.CONTINUOUS,
+            width = 11907,
         } = options;
 
         this.options = options;
+        this.root.push(new SectionType(type));
         this.root.push(new PageSize(width, height, orientation));
         this.root.push(new PageMargin(top, right, bottom, left, header, footer, gutter, mirror));
         this.root.push(new Columns(space, equalWidth, num, sep));

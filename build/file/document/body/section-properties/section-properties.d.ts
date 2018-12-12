@@ -1,6 +1,7 @@
 import { FooterWrapper } from "../../../../file/footer-wrapper";
 import { HeaderWrapper } from "../../../../file/header-wrapper";
 import { XmlComponent } from "../../../../file/xml-components";
+import { ISectionTypeAttributes } from ".";
 import { IColumnsAttributes } from "./columns/columns-attributes";
 import { IDocGridAttributesProperties } from "./doc-grid/doc-grid-attributes";
 import { IPageBordersOptions } from "./page-border";
@@ -21,7 +22,7 @@ export interface IFootersOptions {
 export interface ITitlePageOptions {
     readonly titlePage?: boolean;
 }
-export interface ISectionPropertiesOptions extends IPageSizeAttributes, IPageMarginAttributes, IColumnsAttributes, IDocGridAttributesProperties, IHeadersOptions, IFootersOptions, IPageNumberTypeAttributes, IPageBordersOptions, ITitlePageOptions {
+export interface ISectionPropertiesOptions extends ISectionTypeAttributes, IColumnsAttributes, IDocGridAttributesProperties, IFootersOptions, IHeadersOptions, IPageBordersOptions, IPageMarginAttributes, IPageNumberTypeAttributes, ITitlePageOptions, IPageSizeAttributes {
 }
 export declare type SectionPropertiesOptions = ISectionPropertiesOptions;
 export declare class SectionProperties extends XmlComponent {
