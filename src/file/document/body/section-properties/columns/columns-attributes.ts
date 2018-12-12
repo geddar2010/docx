@@ -12,6 +12,6 @@ export class ColumnsAttributes extends XmlAttributeComponent<IColumnsAttributes>
         space: "w:space",
         equalWidth: "w:equalWidth",
         num: "w:num",
-        sep:"w:sep"
+        sep: "w:sep",
     };
 }
