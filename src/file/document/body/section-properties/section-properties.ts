@@ -37,15 +37,18 @@ interface ITitlePageOptions {
     readonly titlePage?: boolean;
 }
 
-export type SectionPropertiesOptions = IPageSizeAttributes &
-    IPageMarginAttributes &
-    IColumnsAttributes &
-    IDocGridAttributesProperties &
-    IHeadersOptions &
-    IFootersOptions &
-    IPageNumberTypeAttributes &
-    IPageBordersOptions &
-    ITitlePageOptions;
+export interface ISectionPropertiesOptions
+    extends IPageSizeAttributes,
+        IPageMarginAttributes,
+        IColumnsAttributes,
+        IDocGridAttributesProperties,
+        IHeadersOptions,
+        IFootersOptions,
+        IPageNumberTypeAttributes,
+        IPageBordersOptions,
+        ITitlePageOptions {}
+
+export type SectionPropertiesOptions = ISectionPropertiesOptions;
 
 export class SectionProperties extends XmlComponent {
     private readonly options: SectionPropertiesOptions;
@@ -56,17 +59,17 @@ export class SectionProperties extends XmlComponent {
         const {
             width = 11906,
             height = 16838,
-            top = 1440,
-            right = 1440,
-            bottom = 1440,
+            top = 1133,
+            right = 1133,
+            bottom = 1133,
             left = 1440,
-            header = 708,
+            header = 1700,
             footer = 708,
             gutter = 0,
             mirror = false,
-            space = 708,
+            space = 284,
             num = 1,
-            equalWidth = false,
+            equalWidth = true,
             sep = false,
             linePitch = 360,
             orientation = PageOrientation.PORTRAIT,

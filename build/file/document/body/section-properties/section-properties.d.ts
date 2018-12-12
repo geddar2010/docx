@@ -21,7 +21,9 @@ interface IFootersOptions {
 interface ITitlePageOptions {
     readonly titlePage?: boolean;
 }
-export declare type SectionPropertiesOptions = IPageSizeAttributes & IPageMarginAttributes & IColumnsAttributes & IDocGridAttributesProperties & IHeadersOptions & IFootersOptions & IPageNumberTypeAttributes & IPageBordersOptions & ITitlePageOptions;
+export interface ISectionPropertiesOptions extends IPageSizeAttributes, IPageMarginAttributes, IColumnsAttributes, IDocGridAttributesProperties, IHeadersOptions, IFootersOptions, IPageNumberTypeAttributes, IPageBordersOptions, ITitlePageOptions {
+}
+export declare type SectionPropertiesOptions = ISectionPropertiesOptions;
 export declare class SectionProperties extends XmlComponent {
     private readonly options;
     constructor(options?: SectionPropertiesOptions);
