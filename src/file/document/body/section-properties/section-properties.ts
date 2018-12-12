@@ -59,18 +59,23 @@ export class SectionProperties extends XmlComponent {
         super("w:sectPr");
 
         const {
-            bottom = 1133,
-            equalWidth = true,
             footer = 708,
             footers,
             gutter = 0,
             header = 1700,
             headers,
             height = 16839,
-            left = 1440,
+            width = 11907,
+            left = 1700,
+            top = 1134,
+            right = 1134,
+            bottom = 1134,
             linePitch = 360,
             mirror = false,
             num = 1,
+            sep = false,
+            space = 284,
+            equalWidth = true,
             orientation = PageOrientation.PORTRAIT,
             pageBorderBottom,
             pageBorderLeft,
@@ -79,13 +84,9 @@ export class SectionProperties extends XmlComponent {
             pageBorderTop,
             pageNumberFormatType,
             pageNumberStart,
-            right = 1133,
-            sep = false,
-            space = 284,
+
             titlePage = false,
-            top = 1133,
             type = SectionTypeValue.CONTINUOUS,
-            width = 11907,
         } = options;
 
         this.options = options;
